@@ -15,7 +15,7 @@ public class EBController {
 
 	@RequestMapping("/add.htm")
 	public ModelAndView add(@RequestParam int a, @RequestParam int b) {
-		int c = a + b;
+		int c = a - b;
 		return new ModelAndView("result", "key", c);
 	}
 
